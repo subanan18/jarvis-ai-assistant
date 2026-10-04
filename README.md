@@ -155,3 +155,17 @@ Jarvis: Going to sleep.
 **Subanan Subathevan** — Computer Science graduate focused on Python, backend engineering, realtime systems and applied AI.
 
 [Portfolio](https://subanan18.github.io/) · [GitHub](https://github.com/subanan18)
+
+## 🧪 Quality checks
+
+The repository includes GitHub Actions CI for Python 3.12. Pull requests and pushes to `main` run Ruff and Pytest automatically.
+
+Run the same checks locally before committing:
+
+```powershell
+ruff check app tests scripts
+pytest -q
+```
+
+Keeping these checks green helps prevent regressions in the wake-word lifecycle, tool boundaries and desktop-assistant utilities.
+
